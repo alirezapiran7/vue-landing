@@ -1,32 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@font-face {
+  font-family: "IRANSans";
+  src: local("IRANSans"), url(./assets/fonts/IRANSans.ttf) format("truetype");
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+body {
+  height: 100%;
+  margin: 0;
+  font-family: IRANSans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: right;
+  background-color: #ffc624;
+  direction: rtl;
 }
 </style>
